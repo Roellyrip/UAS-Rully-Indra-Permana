@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPAD</title>
+    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="brand">
+            <h2>IPAD Store</h2>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Products
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="ipadpro.html">Ipad Pro</a>
+                  <a href="ipadair.html">Ipad Air</a>
+                  <a href="ipadmini.html">Ipad Mini</a>
+                </div>
+              </div> 
+            <a href="aboutus.html">About Us</a>
+            <a href="Register.html">Register</a> 
+            <a href="login.html">Login</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+          
+    </nav>
+
+    <div class="container">
+        <h1>Login</h1>
+          <form>
+              <label>Username</label><br>
+              <input type="text"><br>
+              <label>Password</label><br>
+              <input type="password"><br>
+              <button><a href="login.html"> Log in </a></button>
+          </form>
+
+          <p>Don't have an account yet? <a href="Register.html">Register</a> now!</p>
+          
+    </div> 
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += "responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+    
+</body>
+</html>
